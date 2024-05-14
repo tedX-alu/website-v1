@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+// import 'antd/dist/antd.css';
 import NavBar from "@/components/NavBar";
+import FooterComponent from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -28,6 +30,7 @@ export default function RootLayout({
         <main className="flex h-screen flex-col w-full px-4 md:px-14 pt-1">
           <NavBar />
           {children}
+          <FooterComponent/>
         </main>
       </body>
     </html>
