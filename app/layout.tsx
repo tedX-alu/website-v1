@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${bricolageGrotesque} `}>
+      <body className={`${inter.variable} ${bricolageGrotesque.variable} `}>
         <main className="flex h-screen flex-col w-full px-4 md:px-14 pt-1">
           <NavBar />
           {children}
