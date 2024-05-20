@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Upcoming = () => {
   return (
-    <div>
+    <div className="md:pt-12 pt-4">
       <div>
         <div>
           <h1 className="text-3xl font-extrabold">Upcoming Events</h1>
@@ -47,7 +47,7 @@ const Upcoming = () => {
             <div className="pt-8 flex space-x-3">
               <Theme>
                 <Button
-                  className=" font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90"
+                  className=" font-semibold bg-red-500 text-white hover:scale-90 font-bricolageGrotesque"
                   size="large"
                 >
                   Register Now
@@ -56,7 +56,7 @@ const Upcoming = () => {
 
               <DetailButton>
                 <Button
-                  className=" font-semibold border-red-500 text-red-500 hover:bg-red-500 focus:ring-red-500 hover:scale-90"
+                  className=" font-semibold border-red-500 text-red-500  hover:scale-90 font-bricolageGrotesque"
                   size="large"
                   href="/details"
                 >

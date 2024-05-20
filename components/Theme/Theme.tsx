@@ -8,9 +8,6 @@ interface ThemeProps {
 const DetailButton: React.FC<ThemeProps> = ({ children }) => (
   <ConfigProvider
     theme={{
-      token: {
-        fontFamily: " Inter ",
-      },
       components: {
         // Seed Token
         Button: {
@@ -20,7 +17,6 @@ const DetailButton: React.FC<ThemeProps> = ({ children }) => (
           colorPrimaryActive: "#FFFFFF",
           defaultHoverBg: "#FFFFFF",
           defaultBorderColor:"#FF2929",
-          fontFamily: " Inter ",
         },
 
         // Alias Token

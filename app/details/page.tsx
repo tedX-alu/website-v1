@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "antd";
-import Speakers from "@/components/Speakers";
 import Image from "next/image";
 import Theme from "@/components/Theme/Button";
 import Link from "next/link";
@@ -15,7 +14,7 @@ function Details() {
     },
   ];
   return (
-    <div className="space-y-16 max-w-screen-2xl mx-auto font-inter">
+    <div className="space-y-16 max-w-screen-2xl mx-auto font-bricolageGrotesque">
       <div className="md:grid flex md:gap-0 gap-6 md:grid-cols-3 md:pt-8 pt-4">
         <div className="flex md:flex-wrap md:gap-6 text-2xl font-medium">
           <Link href={"/events"}>
@@ -73,7 +72,7 @@ function Details() {
           ))}
           <Theme>
             <Button
-              className=" font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90"
+              className=" font-semibold bg-red-500 text-white hover:scale-90 font-bricolageGrotesque"
               size="large"
             >
               Register Now
@@ -82,7 +81,7 @@ function Details() {
         </div>
       </div>
 
-      <Speakers />
+      {/* <profile /> */}
     </div>
   );
 }

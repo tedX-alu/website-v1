@@ -66,7 +66,7 @@ function Past() {
 
             <p className="text-sm">{event.paragraph}</p>
             <Theme>
-              <Button style={{ width: "100%" }} size="large" className="font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90">
+              <Button style={{ width: "100%" }} size="large" className="font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90 font-bricolageGrotesque">
                 {event.buttonText}
               </Button>
             </Theme>

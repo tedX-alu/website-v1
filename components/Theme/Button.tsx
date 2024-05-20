@@ -9,9 +9,6 @@ const Theme: React.FC<ThemeProps> = ({ children }) => (
 
   <ConfigProvider
     theme={{
-      token: {
-        fontFamily: " Inter ",
-      },
       components: {
         Button: {
           colorPrimaryHover: "#FFFFFF",
@@ -19,7 +16,6 @@ const Theme: React.FC<ThemeProps> = ({ children }) => (
           colorPrimaryBorder: "#FF2929",
           colorPrimaryActive: "#FF2929",
           defaultHoverBg: "#FF2929",
-          fontFamily: " Inter ",
         },
       },
     }}

@@ -35,7 +35,7 @@ function Speaker() {
             />
             <Theme>
               <Button
-                className="font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90"
+                className="font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90 font-bricolageGrotesque"
                 size="large"
               >
                 {speaker.buttonText}
