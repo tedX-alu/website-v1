@@ -3,6 +3,8 @@ import { Button } from "antd";
 import Image from "next/image";
 import Theme from "@/components/Theme/Button";
 import Link from "next/link";
+import Profile from "@/components/profile";
+import { team1 } from "@/lib/teams";
 
 function Details() {
   const eventDetails = [
@@ -23,14 +25,14 @@ function Details() {
               src="/images/arrow-left.svg"
               width={35}
               height={35}
-              className="md:pt-1 pt-2"
+              className="md:pt-1 pt-2 hover:scale-90"
             />
           </Link>
 
           <p className=" pt-1 md:block hidden">Back</p>
         </div>
         <div>
-          <p className="text-4xl font-bold">Event Details</p>
+          <p className="text-4xl md:pt-0 pt-1 font-bold">Event Details</p>
         </div>
       </div>
 
@@ -81,7 +83,21 @@ function Details() {
         </div>
       </div>
 
-      {/* <profile /> */}
+      <div className="space-y-6">
+        <h1 className="text-4xl font-extrabold">Speakers</h1>
+        <div className="grid grid-cols-3">
+          {team1.map((profile, index) => (
+            <Profile
+              key={index}
+              imageUrl={profile.imageUrl}
+              alt={profile.alt}
+              profileName={profile.profileName}
+              profileTitle={profile.profileTitle}
+              profileInstagram={profile.profileInstagram}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
