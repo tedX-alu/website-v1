@@ -58,3 +58,26 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  50%, 100% { border-color: white; }
+}
+
+.typewriter-container {
+  display: inline-block;
+  overflow: hidden; 
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+  animation: blink .75s step-end infinite;
+}
+
+.typewriter-text {
+  display: inline-block;
+  animation: typewriter 4s steps(40, end) 1s 1 normal both;
+}

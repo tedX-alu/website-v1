@@ -128,7 +128,7 @@ const About = () => {
         <div className="text-center my-5 font-semibold">
           <h3 className="text-xl md:text-3xl">Get to Know Us</h3>
           <h2 className="md:text-5xl text-xl">
-            <span className="text-red-500">TEDX</span> ALU RWANDA Is Its People
+            <span className="text-red-500">TEDx</span> ALU RWANDA Is Its People
           </h2>
         </div>
         <div>

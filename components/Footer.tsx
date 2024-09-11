@@ -12,15 +12,15 @@ export default function FooterComponent() {
           <div className="flex flex-col gap-4 md:w-1/3">
             <h2 className="text-3xl font-bold text-red-600">TEDxALURwanda</h2>
             <p className="text-gray-700">
-              TEDxALURwanda is a dynamic, student-led organization that embodies the spirit of TED's mission to spread
+              TEDxALURwanda is a dynamic, student-led organization that embodies the spirit of TED&apos;s mission to spread
               ideas that can change the world. We believe that by fostering a culture of curiosity, open-mindedness, and
               collaboration
             </p>
             <div className="flex gap-4">
-              <InstagramIcon className="text-gray-700 h-6 w-6" />
-              <FacebookIcon className="text-gray-700 h-6 w-6" />
-              <SunMediumIcon className="text-gray-700 h-6 w-6" />
-              <YoutubeIcon className="text-gray-700 h-6 w-6" />
+              <InstagramIcon className="text-red-700 h-6 w-6" />
+              <FacebookIcon className="text-red-700 h-6 w-6" />
+              <LinkedInIcon className="text-red-700 h-6 w-6" />
+              <YoutubeIcon className="text-red-700 h-6 w-6" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 md:w-1/3 md:grid-cols-3">
@@ -52,7 +52,7 @@ export default function FooterComponent() {
           <div className="flex flex-col gap-4 md:w-1/3">
             <h3 className="font-semibold">Newsletter</h3>
             <p className="text-gray-700">
-              TEDxALURwanda is a dynamic, student-led organization that embodies the spirit of TED's.
+              TEDxALURwanda is a dynamic, student-led organization that embodies the spirit of TED&apos;s.
             </p>
             <div className="flex mt-4">
               <Input placeholder="Enter your email" className="border-2 border-gray-300 p-2 rounded-l-md" />
@@ -107,7 +107,7 @@ function InstagramIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>)
 }
 
 
-function SunMediumIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function LinkedInIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -121,17 +121,11 @@ function SunMediumIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>)
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <circle cx="12" cy="12" r="4" />
-      <path d="M12 3v1" />
-      <path d="M12 20v1" />
-      <path d="M3 12h1" />
-      <path d="M20 12h1" />
-      <path d="m18.364 5.636-.707.707" />
-      <path d="m6.343 17.657-.707.707" />
-      <path d="m5.636 5.636.707.707" />
-      <path d="m17.657 17.657.707.707" />
+      <rect x="2" y="2" width="20" height="20" rx="2" ry="2" />
+      <path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-2-2h-4v8h-4v-8H6v8H2v-14h4v4h.02C6.02 8.9 7.9 8 10 8z" />
+      <circle cx="6" cy="6" r="2" />
     </svg>
-  )
+  );
 }
 
 
