@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
@@ -17,34 +16,42 @@ export default function FooterComponent() {
               collaboration
             </p>
             <div className="flex gap-4">
-              <InstagramIcon className="text-red-700 h-6 w-6" />
-              <FacebookIcon className="text-red-700 h-6 w-6" />
-              <LinkedInIcon className="text-red-700 h-6 w-6" />
-              <YoutubeIcon className="text-red-700 h-6 w-6" />
+              <Link href="https://www.instagram.com/tedx.alurwanda" target="_blank" rel="noopener noreferrer">
+                <InstagramIcon className="text-red-700 h-6 w-6" />
+              </Link>
+              <Link href="https://www.facebook.com/tedx.alurwanda" target="_blank" rel="noopener noreferrer">
+                <FacebookIcon className="text-red-700 h-6 w-6" />
+              </Link>
+              <Link href="https://www.linkedin.com/company/tedx-alurwanda" target="_blank" rel="noopener noreferrer">
+                <LinkedInIcon className="text-red-700 h-6 w-6" />
+              </Link>
+              <Link href="https://www.youtube.com/@tedxalurwanda" target="_blank" rel="noopener noreferrer">
+                <YoutubeIcon className="text-red-700 h-6 w-6" />
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 md:w-1/3 md:grid-cols-3">
             <div className="flex flex-col gap-2">
               <h3 className="font-semibold">About Us</h3>
-              <Link href="#" className="text-gray-600 hover:text-gray-900" prefetch={false}>
+              <Link href="/events" className="text-gray-600 hover:text-gray-900" prefetch={false}>
                 Events
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900" prefetch={false}>
+              <Link href="/partners" className="text-gray-600 hover:text-gray-900" prefetch={false}>
                 Partners
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900" prefetch={false}>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900" prefetch={false}>
                 Contact
               </Link>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="font-semibold">Nominate a Speaker</h3>
-              <Link href="#" className="text-gray-600 hover:text-gray-900" prefetch={false}>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900" prefetch={false}>
                 Sponsors
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900" prefetch={false}>
+              <Link href="/about" className="text-gray-600 hover:text-gray-900" prefetch={false}>
                 Team
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900" prefetch={false}>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900" prefetch={false}>
                 Volunteer
               </Link>
             </div>
