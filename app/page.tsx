@@ -37,7 +37,7 @@ export default function homepage() {
       </div>
       <section className="bg-white text-black p-8 my-8">
         <div className="flex flex-col md:flex-row items-center">
-          <img
+          <Image
             alt="Speaker"
             className="md:w-1/2"
             height="400"
@@ -94,7 +94,7 @@ export default function homepage() {
             </Button>
           </div>
           <div className="md:w-1/2 md:pl-8">
-            <img
+            <Image
               alt="Group Photo"
               className="mb-4"
               height="500"
@@ -108,37 +108,21 @@ export default function homepage() {
           </div>
         </div>
       </section>
-      {/* <section className="text-center p-8 my-8">
-        <h2 className="text-4xl font-bold mb-8">Highlight from 2023 "What If"</h2>
-        <Tabs>
-          <TabsList>
-            <TabsTrigger value="guest-speakers">Guest Speakers</TabsTrigger>
-            <TabsTrigger value="talks">Talks</TabsTrigger>
-            <TabsTrigger value="performance">Performance</TabsTrigger>
-          </TabsList>
-          scxC<TabsContent value="guest-speakers">
-            <div className="flex items-center justify-between">
-              <Button variant="ghost">
-                <ChevronLeftIcon className="w-6 h-6" />
-              </Button>
-              <img
-                alt="Speaker Slide"
-                className="mx-4"
-                height="300"
-                src="/images/speaker.png"
-                style={{
-                  aspectRatio: "300/300",
-                  objectFit: "cover",
-                }}
-                width="300"
-              />
-              <Button variant="ghost">
-                <ChevronRightIcon className="w-6 h-6" />
-              </Button>
-            </div>
-          </TabsContent>
-        </Tabs>
-      </section> */}
+      <section className="p-8 my-8">
+        <h2 className="font-bricolageGrotesque mb-5 text-2xl text-center font-semibold ">
+          Highlight from TEDxALURwanda 2023
+          <span className="text-red-500"> "What If"</span>
+        </h2>
+        <iframe
+          className="w-full aspect-video self-stretch md:min-h-96"
+          src="https://www.youtube.com/embed/nmUbrs9gViM?si=Dl0qd_DM2_WzW8Uj"
+          width={'560'}
+          allow="autoplay"
+          frameBorder="0"
+          title="Highlight Video"
+          aria-hidden="true"
+        />
+      </section>
     </div>
   );
 }
