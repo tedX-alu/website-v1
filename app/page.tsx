@@ -7,6 +7,7 @@ import { TabsTrigger, TabsList, TabsContent, Tabs } from '@/components/ui/tabs';
 import { JSX, SVGProps } from 'react';
 import speaker from '/images/speaker.png';
 import EventHighlight from '@/components/HighlightComponent';
+import Link from 'next/link';
 
 export default function homepage() {
   const highlights = [
@@ -41,7 +42,7 @@ export default function homepage() {
             alt="Speaker"
             className="md:w-1/2"
             height="400"
-            src="/images/speaker.png"
+            src="/images/home-about.png"
             style={{
               aspectRatio: '400/400',
               objectFit: 'cover',
@@ -63,18 +64,26 @@ export default function homepage() {
               differently, share their ideas, and make a meaningful impact in
               their communities.
             </p>
-            <Button className="text-white">Learn More</Button>
+            <Link href="/about">
+              <Button className="text-white">Learn More</Button>
+            </Link>
           </div>
         </div>
       </section>
+
+      <div className='mt-20' />
+
+
       <section className="p-8 my-8">
-        <div className="flex flex-col md:flex-row items-center justify-between bg-gray-200 p-4">
+      <h2 className="text-3xl font-bold mb-4">Upcoming Events</h2>
+
+        <div className="flex flex-col md:flex-row items-center justify-between bg-gray-200 p-4 rounded">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-4">Theme: What Next?</h2>
+            <h2 className="text-3xl font-bold mb-4">Theme: How Might We..?</h2>
             <Badge className="mb-4" variant="secondary">
-              September 12, 2024
+              November 30, 2024
             </Badge>
-            <p className="mb-6">Kigali Convention Center</p>
+            <p className="mb-6"><i className="fas fa-map-marker-alt"></i> Canal Olympia, Rebero</p>
             <p className="mb-6">
               TEDxALURwanda is an independently organized, University TEDx event
               at the renowned African Leadership University licensed by TED.
@@ -98,7 +107,7 @@ export default function homepage() {
               alt="Group Photo"
               className="mb-4"
               height="500"
-              src="/images/event.png"
+              src="/images/how_might_we.png"
               style={{
                 aspectRatio: '300/300',
                 objectFit: 'cover',
