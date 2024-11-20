@@ -1,15 +1,15 @@
-import Image from "next/image";
-import React from "react";
-import Muslim from "/public/images/muslim.png";
-import { cn } from "@/lib/utils";
+import Image from 'next/image';
+import React from 'react';
+import Muslim from '/public/images/roda.png';
+import { cn } from '@/lib/utils';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import Profile from "@/components/profile";
-import { team1 } from "@/lib/teams";
+} from '@/components/ui/accordion';
+import Profile from '@/components/profile';
+import { team1 } from '@/lib/teams';
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
             <span className="text-red-500">TEDX</span> ALURwanda
           </h1>
         </div>
-        <p className={cn("md:w-[500px]")}>
+        <p className={cn('md:w-[500px]')}>
           TEDxALURwanda is an independently organized, University TEDx event at
           the renowned African Leadership University licensed by TED. Since its
           inception in 2019, it has grown to become a flagship event at our
@@ -41,7 +41,7 @@ const About = () => {
           src={Muslim}
           width={1500}
           height={100}
-          alt="muslim"
+          alt="roda"
           className="md:w-2/3 rounded-lg"
         />
       </section>
