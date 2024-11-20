@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import David from '@/public/images/david_emmanuel.png';
 import React from 'react';
-import Muslim from '/public/images/roda.png';
+import Roda from '/public/images/roda.png';
 import { cn } from '@/lib/utils';
 import {
   Accordion,
@@ -13,16 +14,16 @@ import { team1 } from '@/lib/teams';
 
 const About = () => {
   return (
-    <main className="px-6 pt-5 md:pt-20 font-bricolageGrotesque">
+    <main className="max-w-7xl mx-auto px-4 pt-5 md:pt-20 font-bricolageGrotesque">
       {/* First part */}
-      <section className="flex flex-col gap-4 md:space-x-12 md:flex-row items-center xl:space-x-40 md:justify-center">
+      <section className="flex flex-col gap-4  md:justify-center">
         <div>
-          <h1 className="text-3xl xl:text-7xl font-semibold max-sm:text-center">
+          <h1 className="text-3xl font-semibold max-sm:text-center">
             About <br />
             <span className="text-red-500">TEDX</span> ALURwanda
           </h1>
         </div>
-        <p className={cn('md:w-[500px]')}>
+        <p>
           TEDxALURwanda is an independently organized, University TEDx event at
           the renowned African Leadership University licensed by TED. Since its
           inception in 2019, it has grown to become a flagship event at our
@@ -38,11 +39,11 @@ const About = () => {
       {/* Image */}
       <section className=" justify-center flex my-5 md:my-20">
         <Image
-          src={Muslim}
+          src={Roda}
           width={1500}
           height={100}
           alt="roda"
-          className="md:w-2/3 rounded-lg"
+          className=" rounded-lg"
         />
       </section>
       {/* Second part */}
@@ -130,6 +131,15 @@ const About = () => {
           <h2 className="md:text-5xl text-xl">
             <span className="text-red-500">TEDx</span> ALU RWANDA Is Its People
           </h2>
+        </div>
+        <div>
+          <Profile
+            imageUrl={'/images/david_emmanuel.png'}
+            alt={'David Emmanuel'}
+            profileName={'David Emmanuel'}
+            profileTitle={'Lead Organizer and Chief Curator'}
+            profileInstagram={'profile.profileInstagram'}
+          />
         </div>
         <div>
           <Accordion type="single" collapsible>

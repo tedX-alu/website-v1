@@ -109,7 +109,7 @@ export default function homepage() {
         </div>
       </section>
       <section className="p-8 my-8">
-        <h2 className="font-bricolageGrotesque mb-5 text-2xl text-center font-semibold ">
+        <h2 className="font-bricolageGrotesque mb-5 text-xl md:text-2xl text-center font-semibold ">
           Highlight from TEDxALURwanda 2023
           <span className="text-red-500"> "What If"</span>
         </h2>
