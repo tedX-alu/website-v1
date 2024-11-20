@@ -19,8 +19,8 @@ const About = () => {
       <section className="flex flex-col gap-4  md:justify-center">
         <div>
           <h1 className="text-3xl font-semibold max-sm:text-center">
-            About <br />
-            <span className="text-red-500">TEDX</span> ALURwanda
+            About 
+            <span className="text-red-500"> TEDx</span> ALURwanda
           </h1>
         </div>
         <p>

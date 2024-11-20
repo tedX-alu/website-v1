@@ -30,22 +30,38 @@ export default function Component() {
               Home
             </Link>
             <Link
-              className="relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50"
+              className={`relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50 ${
+                pathname === '/about'
+                  ? 'text-red-500'
+                  : 'text-gray-800 hover:text-red-500'
+              }`}
               href="/about">
               About
             </Link>
             <Link
-              className="relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50"
+              className={`relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50 ${
+                pathname === '/events'
+                  ? 'text-red-500'
+                  : 'text-gray-800 hover:text-red-500'
+              }`}
               href="/events">
               Events
             </Link>
             <Link
-              className="relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50"
+              className={`relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50 ${
+                pathname === '/partners'
+                  ? 'text-red-500'
+                  : 'text-gray-800 hover:text-red-500'
+              }`}
               href="/partners">
               Partners
             </Link>
             <Link
-              className="relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50"
+              className={`relative before:absolute before:-bottom-1 before:left-0 before:h-[2px] before:w-0 before:bg-gray-900 before:transition-all before:duration-300 hover:before:w-full dark:before:bg-gray-50 ${
+                pathname === '/contact'
+                  ? 'text-red-500'
+                  : 'text-gray-800 hover:text-red-500'
+              }`}
               href="/contact">
               Contact
             </Link>

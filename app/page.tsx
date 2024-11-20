@@ -23,7 +23,7 @@ export default function homepage() {
       <div className="relative h-[600px] w-full max-w-45xl mx-auto my-20 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
         {/* Background Image */}
         <Image
-          src={Hero}
+          src="/images/hero.jpeg"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
