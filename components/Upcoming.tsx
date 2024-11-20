@@ -14,7 +14,7 @@ const Upcoming = () => {
         <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 bg-beige md:p-10 p-4 ">
           <div>
             <img
-              src="/images/event.png"
+              src="/images/Frame1.png"
               alt="Event Image"
               className="w-[100vh] max-h-[70vh] object-cover rounded-lg"
             />
@@ -24,11 +24,14 @@ const Upcoming = () => {
             <span className="md:flex md:justify-between md:space-y-0 space-y-2">
               <div className="flex gap-2 md:pt-0 pt-2">
                 <img alt="" src="/images/calendar.svg" />
-                <p className=" font-medium ">September 12, 2024</p>
+                <p className=" font-medium ">November 30th, 2024</p>
               </div>
               <div className="flex gap-2">
                 <img alt="" src="/images/location.svg" />
-                <p className=" font-medium ">Kigali Convention Center</p>
+                <p className=" flex gap-2 ">
+                  <span className="font-medium">Canal Olympia</span>
+                  <span>Rebero</span>
+                </p>
               </div>
             </span>
             <p className=" text-justify">

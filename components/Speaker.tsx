@@ -23,7 +23,7 @@ const speakerData: SpeakerData[] = [
 
 function Speaker() {
   return (
-    <div className="speakers">
+    <div className="speakers xl:pb-28 md:pb-24 pb-8">
       {speakerData.map((speaker: SpeakerData, index: number) => (
         <div key={index} className="speaker grid lg:grid-cols-2 lg:gap-20">
           <div className="speaker-info space-y-8 py-16">

@@ -9,14 +9,14 @@ import { team1 } from "@/lib/teams";
 function Details() {
   const eventDetails = [
     {
-      date: "Thursday, June 13th",
-      time: "6 - 9:30 pm",
-      location: "Forrester Student Center",
+      Time: "11 am",
+      Date: "November 30th 2024",
+      Location: "Canal Olympia Rebero",
       tickets: "45$ each",
     },
   ];
   return (
-    <div className="space-y-16 max-w-screen-2xl mx-auto font-bricolageGrotesque">
+    <div className="space-y-16 max-w-screen-2xl xl:mx-16 md:xl-12 mx-4 font-bricolageGrotesque">
       <div className="md:grid flex md:gap-0 gap-6 md:grid-cols-3 md:pt-8 pt-4">
         <div className="flex md:flex-wrap md:gap-6 text-2xl font-medium">
           <Link href={"/events"}>
@@ -38,9 +38,9 @@ function Details() {
 
       <div>
         <img
-          src="/images/event1.png"
+          src="/images/Frame.png"
           alt="Event image"
-          className=" w-full object-cover max-h-[80vh] rounded-md"
+          className=" w-full object-cover h-full"
         />
       </div>
 
@@ -53,18 +53,18 @@ function Details() {
         </p>
         <div>
           {eventDetails.map((event) => (
-            <div key={event.date} className="md:my-6 my-8 text-lg font-medium">
+            <div key={event.Date} className="md:my-6 my-8 text-lg font-medium">
               <p className="flex gap-2">
                 <span className="text-red-500">Date:</span>
-                <span>{event.date}</span>
+                <span>{event.Date}</span>
               </p>
               <p className="flex gap-2">
                 <span className="text-red-500">Time:</span>
-                <span>{event.time}</span>
+                <span>{event.Time}</span>
               </p>
               <p className="flex gap-2">
                 <span className="text-red-500">Location:</span>
-                <span>{event.location}</span>
+                <span>{event.Location}</span>
               </p>
               <p className="flex gap-2">
                 <span className="text-red-500">Tickets:</span>
