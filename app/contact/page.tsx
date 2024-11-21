@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import Image from 'next/image' 
+import Image from 'next/image'
 
 export default function Component() {
   return (
