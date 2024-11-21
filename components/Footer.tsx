@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faLinkedin, faYoutube, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Instagram, Facebook, Youtube, Twitter } from 'lucide-react';
 import Input from "antd/es/input"
 
 export default function FooterComponent() {
@@ -18,19 +17,19 @@ export default function FooterComponent() {
             </p>
             <div className="flex gap-4">
               <Link href="https://www.instagram.com/tedx.alurwanda" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} className="text-red-700 h-6 w-6" />
+                <Instagram className="text-red-700 h-6 w-6" />
               </Link>
               <Link href="https://www.facebook.com/tedx.alurwanda" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebook} className="text-red-700 h-6 w-6" />
+                <Facebook className="text-red-700 h-6 w-6" />
               </Link>
               <Link href="https://www.linkedin.com/company/tedx-alurwanda" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} className="text-red-700 h-6 w-6" />
+                {/* <LinkedIn className="text-red-700 h-6 w-6" /> */}
               </Link>
               <Link href="https://www.youtube.com/@tedxalurwanda" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faYoutube} className="text-red-700 h-6 w-6" />
+                <Youtube className="text-red-700 h-6 w-6" />
               </Link>
               <Link href="https://twitter.com/tedxalurwanda" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faXTwitter} className="text-red-700 h-6 w-6" />
+                <Twitter className="text-red-700 h-6 w-6" />
               </Link>
             </div>
           </div>
