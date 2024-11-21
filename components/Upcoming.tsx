@@ -14,13 +14,13 @@ const Upcoming = () => {
         <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 bg-beige md:p-10 p-4 ">
           <div>
             <img
-              src="/images/Frame1.png"
+              src="/images/Frame1.jpg"
               alt="Event Image"
-              className="w-[100vh] max-h-[70vh] object-cover rounded-lg"
+              className="w-[100vh] max-h-[75vh] object-cover rounded-lg"
             />
           </div>
           <div className="space-y-8">
-            <h2 className="text-2xl font-extrabold">Theme: What Next?</h2>
+            <h2 className="text-2xl font-extrabold">Theme: How Might We..?</h2>
             <span className="md:flex md:justify-between md:space-y-0 space-y-2">
               <div className="flex gap-2 md:pt-0 pt-2">
                 <img alt="" src="/images/calendar.svg" />
@@ -49,12 +49,14 @@ const Upcoming = () => {
             </p>
             <div className="pt-8 flex space-x-3">
               <Theme>
-                <Button
-                  className=" font-semibold bg-red-500 text-white hover:scale-90 font-bricolageGrotesque"
-                  size="large"
-                >
-                  Register Now
-                </Button>
+                <Link href={"https://tedxalurwanda.sinc.events/tedxalurwa_570"} target="_blank" >
+                  <Button
+                    className=" font-semibold bg-red-500 text-white hover:scale-90 font-bricolageGrotesque"
+                    size="large"
+                  >
+                    Register Now
+                  </Button>
+                </Link>
               </Theme>
 
               <DetailButton>

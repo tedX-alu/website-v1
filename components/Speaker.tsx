@@ -12,7 +12,7 @@ interface SpeakerData {
 
 const speakerData: SpeakerData[] = [
   {
-    image: "/images/speaker.png",
+    image: "/images/past_events/speaker1.png",
     title: "Nominate a speaker",
     description:
       "Each TED conference features more than 50 of the world's most innovative and influential speakers. At TED, we search year-round for presenters who will inform and inspire, surprise and delight. If you know someone who belongs on the TED stage, or if you belong there yourself, we want to hear from you! Please use our speaker recommendation form to tell us why this person would be well-suited to speak at TED. ",

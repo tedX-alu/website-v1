@@ -1,6 +1,8 @@
 import { Button } from "antd";
 import React from "react";
 import Theme from "./Theme/Button";
+import DetailButton from "./Theme/Theme";
+import Link from "next/link";
 
 interface EventData {
   image: string;
@@ -9,32 +11,31 @@ interface EventData {
   dateIcon: string;
   location: string;
   locationIcon: string;
-  paragraph: string;
-  buttonText: string;
+  watchlink: string;
+  learnlink: string;
+
 }
 
 const eventData: EventData[] = [
   {
-    image: "/images/event.png",
-    theme: "Theme: What Next?",
-    date: "September 12, 2024",
+    image: "/images/past_events/ted1.png",
+    theme: "Theme: What If..?",
+    date: "June 3rd, 2023",
     dateIcon: "/images/calendar.svg",
-    location: "Kigali Convention Center",
+    location: "CanalOlympia Rebero",
     locationIcon: "/images/location.svg",
-    paragraph:
-      "TEDxALURwanda is an independently organized, University TEDx event at the renowned African Leadership University licensed by TED. Since its inception in 2019, it has grown to become a flagship event at our university and within Rwanda, celebrated for its dynamic and disruptive ideas. The inaugural event, themed “Dare to Disrupt,” ",
-    buttonText: "What the talks",
+    watchlink: "https://www.youtube.com/watch?v=nmUbrs9gViM&list=PLfB1pnlx-cAa34lerIiFMqiM0OX6VCNuG&index=1",
+    learnlink: "https://www.ted.com/tedx/events/53025",
   },
   {
-    image: "/images/event.png",
-    theme: "Theme: What Next?",
-    date: "September 12, 2024",
+    image: "/images/past_events/ted2.png",
+    theme: "Theme: Dare to Disrupt",
+    date: "October, 2019",
     dateIcon: "/images/calendar.svg",
-    location: "Kigali Convention Center",
+    location: "Kigali City Hall",
     locationIcon: "/images/location.svg",
-    paragraph:
-      "TEDxALURwanda is an independently organized, University TEDx event at the renowned African Leadership University licensed by TED. Since its inception in 2019, it has grown to become a flagship event at our university and within Rwanda, celebrated for its dynamic and disruptive ideas. The inaugural event, themed “Dare to Disrupt,” ",
-    buttonText: "What the talks",
+    watchlink: "https://www.youtube.com/watch?v=CpP5e9lI5XE&list=PLfB1pnlx-cAb7zmlr8GT2zeHGyrrZChkU",
+    learnlink: "https://www.ted.com/tedx/events/34644",
   },
 ];
 
@@ -53,7 +54,7 @@ function Past() {
               className="w-[100vh] max-h-[70vh] object-cover rounded-lg"
             />
             <h3 className="text-xl font-bold">{event.theme}</h3>
-            <div className="lg:flex lg:justify-between lg:space-y-0 space-y-2 text-sm font-medium">
+            <div className="xl:flex xl:gap-20 lg:space-y-0 space-y-2 text-sm font-medium">
               <div className="date flex gap-3">
                 <img src={event.dateIcon} alt="Date Icon" />
                 <span>{event.date}</span>
@@ -64,12 +65,33 @@ function Past() {
               </div>
             </div>
 
-            <p className="text-sm">{event.paragraph}</p>
-            <Theme>
-              <Button style={{ width: "100%" }} size="large" className="font-semibold bg-red-500 text-white hover:bg-red-500 focus:ring-red-500 hover:scale-90 font-bricolageGrotesque">
-                {event.buttonText}
-              </Button>
-            </Theme>
+            <div className="flex xl:gap-10 w-full md:gap-8 gap-2">
+              <DetailButton>
+                <Link href={event.learnlink} 
+                target="_blank">
+                  <Button
+                    className=" font-semibold border-red-500 xl:px-10 text-red-500  hover:scale-90 font-bricolageGrotesque"
+                    size="middle"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
+              </DetailButton>
+
+              <Theme>
+                <Link
+                  href={event.watchlink}
+                  target="_blank"
+                >
+                  <Button
+                    className=" font-semibold bg-red-500 xl:px-10 text-white hover:scale-90 font-bricolageGrotesque"
+                    size="middle"
+                  >
+                    Watch Talks
+                  </Button>
+                </Link>
+              </Theme>
+            </div>
           </div>
         ))}
       </div>

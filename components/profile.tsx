@@ -22,13 +22,14 @@ const Profile = ({
   profileLinkedIn = "",
 }: ProfileProps) => {
   return (
-    <div className="mb-8  flex flex-col items-center">
+    <div className="mb-8 flex flex-col items-center">
       <Image
         alt={alt}
-        className="rounded-full w-[15vw] md:w-[20vw] object-cover"
+        className="rounded-full w-[15vw] md:w-[15vw] object-cover"
         height="500"
         width="500"
         src={imageUrl}
+        quality={100}
         style={{
           aspectRatio: "300/300",
           objectFit: "cover",
