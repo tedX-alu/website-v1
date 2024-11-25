@@ -8,7 +8,7 @@ export const performers = [
       profileLinkedIn: "https://www.linkedin.com/in/johndoe",
     },
     {
-      imageUrl: "/images/performances/jeremiah.png",
+      imageUrl: "/images/performances/Jeremiah.png",
       alt: "Jeremiah's profile",
       profileName: "Jeremiah Chikhwaza",
       profileTitle: "",

@@ -8,7 +8,7 @@ export const speakers = [
       profileLinkedIn: "https://www.linkedin.com/in/johndoe",
     },
     {
-      imageUrl: "/images/speakers/chidi.png",
+      imageUrl: "/images/speakers/Chidi.png",
       alt: "Chidi's profile",
       profileName: "Chidi Afulezi",
       profileTitle: "",
