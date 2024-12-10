@@ -42,7 +42,7 @@ export const eventManagementTeam = [
     profileName: 'Paul Donatus',
   },
   {
-    imageUrl: '/images/placeholder.png',
+    imageUrl: '/images/event_management/juliana.jpg',
     alt: 'Juliana Holder',
     profileName: 'Juliana Holder',
   },
