@@ -2,7 +2,6 @@ import Image from 'next/image';
 import David from '@/public/images/david_emmanuel.png';
 import React from 'react';
 import Roda from '/public/images/roda.png';
-import { cn } from '@/lib/utils';
 import {
   Accordion,
   AccordionContent,
@@ -10,7 +9,15 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import Profile from '@/components/profile';
-import { team1 } from '@/lib/teams';
+import {
+  communicationTeam,
+  curationTeam,
+  eventManagementTeam,
+  financeTeam,
+  hospitalityTeam,
+  logisticsTeam,
+  websiteTeam,
+} from '@/lib/teams';
 
 const About = () => {
   return (
@@ -19,7 +26,7 @@ const About = () => {
       <section className="flex flex-col gap-4  md:justify-center">
         <div>
           <h1 className="text-3xl font-semibold max-sm:text-center">
-            About 
+            About
             <span className="text-red-500"> TEDx</span> ALURwanda
           </h1>
         </div>
@@ -147,14 +154,13 @@ const About = () => {
               <AccordionTrigger className="md:text-3xl">
                 Curation Team
               </AccordionTrigger>
-              <AccordionContent className="grid grid-cols-3">
-                {team1.map((profile, index) => (
+              <AccordionContent className="grid grid-cols-4">
+                {curationTeam.map((profile, index) => (
                   <Profile
                     key={index}
                     imageUrl={profile.imageUrl}
                     alt={profile.alt}
                     profileName={profile.profileName}
-                    profileTitle={profile.profileTitle}
                     profileInstagram={profile.profileInstagram}
                   />
                 ))}
@@ -162,26 +168,92 @@ const About = () => {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="md:text-3xl">
-                Team 2
+                Event Management Team
               </AccordionTrigger>
-              <AccordionContent>
-                Team 2 is the best team in the world
+              <AccordionContent className="grid grid-cols-4">
+                {eventManagementTeam.map((profile, index) => (
+                  <Profile
+                    key={index}
+                    imageUrl={profile.imageUrl}
+                    alt={profile.alt}
+                    profileName={profile.profileName}
+                  />
+                ))}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="md:text-3xl">
-                Team 3
+                Website Team
               </AccordionTrigger>
-              <AccordionContent>
-                Team 3 is the best team in the world
+              <AccordionContent className="grid grid-cols-4">
+                {websiteTeam.map((profile, index) => (
+                  <Profile
+                    key={index}
+                    imageUrl={profile.imageUrl}
+                    alt={profile.alt}
+                    profileName={profile.profileName}
+                  />
+                ))}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger className="md:text-3xl">
-                Other Teams
+                Operations and Logistics
               </AccordionTrigger>
-              <AccordionContent>
-                Other teams to be added accordingly
+              <AccordionContent className="grid grid-cols-4">
+                {logisticsTeam.map((profile, index) => (
+                  <Profile
+                    key={index}
+                    imageUrl={profile.imageUrl}
+                    alt={profile.alt}
+                    profileName={profile.profileName}
+                  />
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="md:text-3xl">
+                Hospitality Team
+              </AccordionTrigger>
+              <AccordionContent className="grid grid-cols-4">
+                {hospitalityTeam.map((profile, index) => (
+                  <Profile
+                    key={index}
+                    imageUrl={profile.imageUrl}
+                    alt={profile.alt}
+                    profileName={profile.profileName}
+                  />
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="md:text-3xl">
+                Communication Team
+              </AccordionTrigger>
+              <AccordionContent className="grid grid-cols-4">
+                {communicationTeam.map((profile, index) => (
+                  <Profile
+                    key={index}
+                    imageUrl={profile.imageUrl}
+                    alt={profile.alt}
+                    profileName={profile.profileName}
+                  />
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="md:text-3xl">
+                Finance Team
+              </AccordionTrigger>
+              <AccordionContent className="grid grid-cols-4">
+                {financeTeam.map((profile, index) => (
+                  <Profile
+                    key={index}
+                    imageUrl={profile.imageUrl}
+                    alt={profile.alt}
+                    profileName={profile.profileName}
+                  />
+                ))}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
